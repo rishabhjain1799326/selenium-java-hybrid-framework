@@ -6,22 +6,17 @@ import org.openqa.selenium.WebDriver;
 public class HomePage {
 
     WebDriver driver;
-
     public HomePage(WebDriver driver) {
-
         this.driver = driver;
     }
-
-    By loginLink = By.className("ico-login");
-
     public void clickLogin() {
-
-        driver.findElement(loginLink).click();
+        driver.findElement(By.className("ico-login")).click();
+    }
+    public void clickRegister() {
+        driver.findElement(By.className("ico-register")).click();
     }
 
-    public void clickRegister(String firstname, String lastname, String email, String password) {
-
-        driver.findElement(By.className("ico-register")).click();
+    public void RegisterUserData(String firstname, String lastname, String email, String password) {
         driver.findElement(By.xpath("//input[@id='gender-male']")).click();
         driver.findElement(By.xpath(" //input[@id='FirstName']")).sendKeys(firstname);
         driver.findElement(By.xpath(" //input[@id='LastName']")).sendKeys(lastname);

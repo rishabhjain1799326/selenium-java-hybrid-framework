@@ -5,7 +5,7 @@
     <classes>
       <class name="com.rishabh.tests.LoginTest">
         <methods>
-          <include name="verifyLoginFlow"/>
+          <include name="verifyRegisterFlow"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>

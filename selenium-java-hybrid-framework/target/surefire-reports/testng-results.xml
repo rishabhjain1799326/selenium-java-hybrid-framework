@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-20T01:48:21 IST" name="Surefire suite" finished-at="2026-05-20T01:48:34 IST" duration-ms="12605">
+  <suite started-at="2026-05-20T02:55:25 IST" name="Surefire suite" finished-at="2026-05-20T02:55:36 IST" duration-ms="10848">
     <groups>
     </groups>
-    <test started-at="2026-05-20T01:48:21 IST" name="Surefire test" finished-at="2026-05-20T01:48:34 IST" duration-ms="12605">
+    <test started-at="2026-05-20T02:55:25 IST" name="Surefire test" finished-at="2026-05-20T02:55:36 IST" duration-ms="10848">
       <class name="com.rishabh.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.rishabh.tests.LoginTest@41ee392b]" started-at="2026-05-20T01:48:21 IST" name="setup" finished-at="2026-05-20T01:48:24 IST" duration-ms="2858" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rishabh.tests.LoginTest@41ee392b]" started-at="2026-05-20T02:55:25 IST" name="setup" finished-at="2026-05-20T02:55:27 IST" duration-ms="2293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.rishabh.tests.LoginTest@41ee392b]" started-at="2026-05-20T01:48:24 IST" name="verifyLoginFlow" data-provider="loginData" finished-at="2026-05-20T01:48:34 IST" duration-ms="9621" status="PASS">
+        <test-method signature="verifyRegisterFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.rishabh.tests.LoginTest@41ee392b]" started-at="2026-05-20T02:55:27 IST" name="verifyRegisterFlow" data-provider="RegisterUserData" finished-at="2026-05-20T02:55:36 IST" duration-ms="8427" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Rishabh]]>
+                <![CDATA[Rishabh1779225925538]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Jain]]>
+                <![CDATA[Jain1779225925538]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[test2@gmail.com]]>
+                <![CDATA[test1779225925538@gmail.com]]>
               </value>
             </param>
             <param index="3">
@@ -36,8 +36,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rishabh.tests.LoginTest@41ee392b]" started-at="2026-05-20T01:48:34 IST" name="tearDown" finished-at="2026-05-20T01:48:34 IST" duration-ms="107" status="PASS">
+        </test-method> <!-- verifyRegisterFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rishabh.tests.LoginTest@41ee392b]" started-at="2026-05-20T02:55:36 IST" name="tearDown" finished-at="2026-05-20T02:55:36 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
