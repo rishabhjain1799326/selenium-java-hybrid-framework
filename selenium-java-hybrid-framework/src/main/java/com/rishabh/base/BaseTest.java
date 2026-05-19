@@ -9,23 +9,19 @@ import org.testng.annotations.BeforeMethod;
 
 import java.time.Duration;
 
-public class BaseTest {
+public class BaseTest { // BaseTest class to handle WebDriver setup and teardown
 
-    public WebDriver driver;
+    public WebDriver driver; // WebDriver instance to be used in test classes
+         ConfigReader configReader;
+     // ConfigReader configReader; //  ConfigReader instance to read configuration properties
 
-    ConfigReader configReader;
-
-    @BeforeMethod
+    @BeforeMethod // Setup method to initialize WebDriver before each test method
     public void setup() {
 
-        configReader = new ConfigReader();
-
-        WebDriverManager.chromedriver().setup();
-
-        driver = new ChromeDriver();
-
-        driver.manage().window().maximize();
-
+       configReader = new ConfigReader(); // Initialize ConfigReader to read properties
+        WebDriverManager.chromedriver().setup(); // Setup ChromeDriver using WebDriverManager
+        driver = new ChromeDriver(); // Initialize ChromeDriver
+        driver.manage().window().maximize(); // Maximize the browser window
         driver.manage().timeouts()
                 .implicitlyWait(Duration.ofSeconds(10));
 

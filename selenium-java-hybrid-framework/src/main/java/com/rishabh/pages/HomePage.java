@@ -18,4 +18,21 @@ public class HomePage {
 
         driver.findElement(loginLink).click();
     }
+
+    public void clickRegister(String firstname, String lastname, String email, String password) {
+
+        driver.findElement(By.className("ico-register")).click();
+        driver.findElement(By.xpath("//input[@id='gender-male']")).click();
+        driver.findElement(By.xpath(" //input[@id='FirstName']")).sendKeys(firstname);
+        driver.findElement(By.xpath(" //input[@id='LastName']")).sendKeys(lastname);
+        driver.findElement(By.xpath(" //input[@id='Email']")).sendKeys(email);
+        driver.findElement(By.xpath(" //input[@id='Password']")).sendKeys(password);
+        driver.findElement(By.xpath(" //input[@id='ConfirmPassword']")).sendKeys(password);
+        driver.findElement(By.xpath(" //input[@id='register-button']")).click();
+
+        // Code to click on Register link
+
+
+
+    }
 }

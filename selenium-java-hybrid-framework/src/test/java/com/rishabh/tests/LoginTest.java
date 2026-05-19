@@ -13,21 +13,17 @@ public class LoginTest extends BaseTest {
                     TestDataProvider.class)
 
     public void verifyLoginFlow(
-            String email,
-            String password) {
+        String firstname,
+        String lastname,
+        String email,
+        String password) {
 
-        HomePage homePage =
-                new HomePage(driver);
-
-        homePage.clickLogin();
-
-        LoginPage loginPage =
-                new LoginPage(driver);
-
+        HomePage homePage = new HomePage(driver);
+        homePage.clickRegister(firstname, lastname, email, password); 
+        homePage.clickLogin(); 
+        LoginPage loginPage = new LoginPage(driver);
         loginPage.enterEmail(email);
-
         loginPage.enterPassword(password);
-
         loginPage.clickLoginButton();
     }
 }
