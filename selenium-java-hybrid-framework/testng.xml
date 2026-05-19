@@ -4,7 +4,7 @@
 
     <listeners>
         <listener class-name=
-        "com.rishabh.listeners.TestListener"/>
+        "com.rishabh.listeners.TestListeners"/>
     </listeners>
 
     <test name="Regression Tests">
